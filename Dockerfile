@@ -14,7 +14,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN gem update --system \
-    && gem install cucumber
+    && gem install cucumber \
+    && gem install cucumber-ruby
 
 ENV CUCUMBER_CPP_DIR /usr/cucumber-cpp
 
